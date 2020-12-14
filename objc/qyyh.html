@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="bg" src="img/top.jpg" alt="">
+        <div class="top-nav-out">
+            <ul id='nav'>
+                <li><a href="">首页</a></li>
+                <li><a href="">华为专区</a></li>
+                <li><a href="">华为Mate 30E Pro</a></li>
+                <li><a href="">华为FreeBuds Pro</a></li>
+                <li><a href="">无线耳机企业定制服务</a></li>
+                <li>
+                    <div class="user" style="float: right;">
+                        <img src="img/Icon.png" style="float: left;display:block;margin-right:8px; margin-top: 3px;">
+                        <a href="" style="float: left;margin-right:8px;">登录</a>
+                        <p id='sx' style="position: relative;
+                        display: inline-block;"><a href="" style="float: left; margin-left:8px;">注册</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="show"><img class="top-face" src="img/top-face.jpg" alt=""></div>
+        <div class="show" id="float_top"><img src="./img/phone.jpg" alt=""></div>
+    </div>
+   <div class="show"><img src="./img/middle1.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle2.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle3.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle4.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle5.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle6.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle7.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle8.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle9.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle10.jpg" alt=""></div>
+   <div class="show"><img src="./img/middle11.jpg" alt=""></div>
+    
+  
+  
+</body>
+<script>
+      window.onscroll=function(){
+        var topScroll =document.documentElement.scrollTop;
+        var leftScroll =document.documentElement.scrollLeft
+        var bignav = document.getElementById("float_top");
+        console.log(leftScroll)
+        if(topScroll <= 600){            
+            bignav.style.position = 'static';
+        }else{      
+            //当滚动距离大于250px时执行下面的东西
+            bignav.style.position = 'fixed';
+            bignav.style.top = '0'; 
+            bignav.style.left = -leftScroll+'px'; 
+
+        }
+
+    }
+</script>
+
+</html>
